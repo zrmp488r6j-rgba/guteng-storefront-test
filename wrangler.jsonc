@@ -1,0 +1,24 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "guteng-storefront-test",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-11-15",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": [
+      "/api/*"
+    ]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "guteng-db-test",
+      "database_id": "cd90aed3-c679-442c-a04b-d2ce5ff35067",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "vars": {
+    "PAYPAL_MODE": "sandbox"
+  }
+}
