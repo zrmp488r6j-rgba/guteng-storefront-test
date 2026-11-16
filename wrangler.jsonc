@@ -5,6 +5,17 @@
   "compatibility_date": "2026-11-15",
   "assets": {
     "directory": ".",
+    "exclude": [
+      "node_modules/**",
+      ".git/**",
+      "*.log",
+      "wrangler.jsonc",
+      "package.json",
+      "bun.lockb",
+      "package-lock.json",
+      "tsconfig.json",
+      "README.md"
+    ],
     "binding": "ASSETS",
     "run_worker_first": [
       "/api/*"
