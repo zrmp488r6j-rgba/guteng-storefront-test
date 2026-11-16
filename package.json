@@ -1,0 +1,14 @@
+{
+  "name": "guteng-storefront",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:create": "wrangler d1 create guteng-db",
+    "db:migrate:local": "wrangler d1 migrations apply guteng-db --local",
+    "db:migrate:remote": "wrangler d1 migrations apply guteng-db --remote"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
